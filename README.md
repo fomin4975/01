@@ -37,3 +37,18 @@ https://www.reddit.com/r/nvidia/comments/iovn4f/the_3090_is_not_a_titan_replacem
 https://www.techpowerup.com/272525/nvidia-rtx-3090-performance-10-15-higher-than-rtx-3080-in-4k
 https://bizon-tech.com/blog/best-gpu-for-deep-learning-rtx-2080-ti-vs-titan-rtx-vs-rtx-8000-vs-rtx-6000
 https://linuxhint.com/best_graphics_cards_deep_learning/
+--------------
+mirrored_strategy = tf.distribute.MirroredStrategy(devices=["/gpu:0","/gpu:1"],
+                      cross_device_ops=tf.contrib.distribute.AllReduceCrossDeviceOps(
+                         all_reduce_alg="hierarchical_copy")
+                                                   )
+-------------
+https://www.pugetsystems.com/labs/hpc/RTX-2080Ti-with-NVLINK---TensorFlow-Performance-Includes-Comparison-with-GTX-1080Ti-RTX-2070-2080-2080Ti-and-Titan-V-1267/?__cf_chl_captcha_tk__=34f015be718c14a4288c9e4b36a2ff9713d3a555-1608885400-0-AZuKgAZVnPpFXRQXr6_mbSXpDpJN5qu_6QnqnYgCSnO9lE74BMQDrPLySMZHulD6JdrzqQ7UDNBva_XSUHxQeCcOkFtd6kJbzkH1YhfNBdIUrA1EEANPs00ZL6cbQszlKD3irYs01g27eJc_DzEysveEaUdexOZ_yphh-u_dtvCCyH1besJdATCFTBiYyJ9qV0lhM7NS3VX_MZ7AaQeNVViO_Hpqo7OqS0Bm4o2bvgcT0t3J5mburq5O61-WW3qpUALgvEVOLkOrqR9N5TuFFgiuqq-PiXc4-FYf99Id8uCCgHGGNXCAg4JLjtgPquVigLAB2cgvKjCUz6QTd0ioSC0O8qGwiTaN2RVZT2uOASoqDRgi7790FfkLNymXeJrWXvXGyiGozgQR8Fmq0Grqyf6c_Aa9eYXl0GRfXQRlOMLwcab7CRdCI-krIzHQ8K26U1TK7cJnESoqC0K4oKkvYHEGbRxRPZSn00uxzRY1zrg8Lnhjn0AXpwc2M_hz0H6NmXilXmIB7_MmpsTN_0cpe7xeNaPkUYHoDiCwSHmmw1DBuhsQBuQu0__QJph9oK2-pE-watlYPCkfPGxiCqrXUj_nxO3q3PXIBKwyfuPF1aEkl2VyBbGZOlVBzxkwCEK0mlwzleqX9bP0nGUmvU2u2unvtfQNkF5TzpEqvHxa1MoY1k8nA7-KPj3VtTdUV0WUSQ
+https://developer.nvidia.com/explicit-multi-gpu-programming-directx-12?ncid=afm-chs-44270&ranMID=44270&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-fL83Afnqn7XklRisqvdQVA
+https://forums.fast.ai/search?q=nvlink%20topic%3A78202
+https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/
+https://keras.io/guides/distributed_training/
+https://www.tensorflow.org/api_docs/python/tf/distribute/MirroredStrategy
+https://www.tensorflow.org/guide/distributed_training
+https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/
+https://datascience.stackexchange.com/questions/46952/should-i-connect-my-two-gpus-with-sli-or-not-for-keras-tensorflow
